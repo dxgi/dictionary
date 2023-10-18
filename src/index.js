@@ -12,24 +12,41 @@ if (!fuzzysort)
 framework.dependencies['fuzzysort'] = fuzzysort;
 
 framework.data['dictionary'] = [
-    /* ----- INDEX (0) BELOW ----- */
+    /* ----- WORD (1) ----- */
+    { 
+        english: {
+            word: 'word in english',
+            translation: 'translation in kapampangan',
+            pronounciation: '/prəˌnənsēˈāSH(ə)n/',
+            type: 'type',
+            definition: [
+                'definition 1',
+                'definition 2'
+            ]
+        }, // VICE VERSA PALA TO MEDYO A LOT OF WORK? wala pako mahanap na other way eh
+        kapampangan: {
+            word: 'word in kapampangan',
+            translation: 'translation in english',
+            pronounciation: '/man-sa-nas/',
+            type: 'type',
+            definition: 'only one definition' /* CAN BE MULTIPLE DEFINITIONS, REFER ABOVE */
+        }
+    }, /* IMPROTANT CHARACTER "," LAGI MO LALAGYAN NG "," KAPAG MAY NEXT ITEM, otherwise magkakaroon ng syntax error */
+    /* ----- WORD (2) ----- */
     {
         english: {
-            word: 'Apple',
-            translation: 'Mansanas',
-            pronounciation: '/ˈap(ə)l/',
+            word: 'doing',
+            translation: 'gagawan',
+            pronounciation: '/ˈdo͞oiNG/',
             type: 'noun',
-            definition: [
-                'the round fruit of a tree of the rose family, which typically has thin red or green skin and crisp flesh. Many varieties have been developed as dessert or cooking fruit or for making cider.',
-                'the tree which bears apples.'
-            ]
+            definition: 'the activities in which a particular person engages.'
         },
-        filipino: {
-            word: 'Mansanas',
-            translation: 'Apple',
-            pronounciation: '/man-sa-nas/',
+        kapampangan: {
+            word: 'gagawan',
+            translation: 'doing',
+            pronounciation: '/ga-ga-wan/',
             type: 'noun',
-            definition: 'Isang prutas na kulay pula o berde'
+            definition: 'my fucking definition'
         }
     }
 ];
