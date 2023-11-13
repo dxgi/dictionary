@@ -12,10 +12,9 @@ if (!fuzzysort)
 framework.dependencies['fuzzysort'] = fuzzysort;
 
 framework.data['dictionary'] = [
-    /* ----- WORD (1) ----- */
     { 
-        english: {
-            word: 'word in english',
+        tagalog: {
+            word: 'word in tagalog',
             translation: 'translation in kapampangan',
             pronounciation: '/prəˌnənsēˈāSH(ə)n/',
             type: 'type',
@@ -23,30 +22,13 @@ framework.data['dictionary'] = [
                 'definition 1',
                 'definition 2'
             ]
-        }, // VICE VERSA PALA TO MEDYO A LOT OF WORK? wala pako mahanap na other way eh
-        kapampangan: {
-            word: 'word in kapampangan',
-            translation: 'translation in english',
-            pronounciation: '/man-sa-nas/',
-            type: 'type',
-            definition: 'only one definition' /* CAN BE MULTIPLE DEFINITIONS, REFER ABOVE */
-        }
-    }, /* IMPROTANT CHARACTER "," LAGI MO LALAGYAN NG "," KAPAG MAY NEXT ITEM, otherwise magkakaroon ng syntax error */
-    /* ----- WORD (2) ----- */
-    {
-        english: {
-            word: 'doing',
-            translation: 'gagawan',
-            pronounciation: '/ˈdo͞oiNG/',
-            type: 'noun',
-            definition: 'the activities in which a particular person engages.'
         },
         kapampangan: {
-            word: 'gagawan',
-            translation: 'doing',
-            pronounciation: '/ga-ga-wan/',
-            type: 'noun',
-            definition: 'my fucking definition'
+            word: 'word in kapampangan',                    // word in kapampangan
+            translation: 'translation in tagalog',          // translation in tagalog
+            pronounciation: '/man-sa-nas/',                 // phonetic spelling
+            type: 'type',                                   // noun, verb, adjective, adverb, etc.
+            definition: 'only one definition'               // string or array of strings
         }
     }
 ];
